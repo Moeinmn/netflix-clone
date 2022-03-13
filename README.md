@@ -1,5 +1,22 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+##Setup Local Environment
+You need to setup a few API keys for this project to be setup correctly otherwise you won't see any videos.
+
+---Magic Server and Publishable Key
+---Hasura Admin URL and JWT Secret
+---Youtube API Key
+For that, you need to create a .env.local file in your project as shown in docs that will look like this:
+```javascript
+NEXT_PUBLIC_HASURA_ADMIN_URL=<REPLACE_THIS>
+JWT_SECRET=<REPLACE_THIS>
+NEXT_PUBLIC_HASURA_ADMIN_SECRET=<REPLACE_THIS>
+MAGIC_SERVER_KEY=<REPLACE_THIS>
+NEXT_PUBLIC_MAGIC_PUBLISHABLE_API_KEY=<REPLACE_THIS>.
+YOUTUBE_API_KEY=<REPLACE_THIS>
+```
+
+You can retrieve the above environment values by referring their docs linked above and once retrieved, paste above accordingly.
 ## Getting Started
 
 First, run the development server:
