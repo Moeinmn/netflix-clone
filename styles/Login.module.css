@@ -1,0 +1,51 @@
+.container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background:linear-gradient(0deg, rgba(63, 63, 63, 0.3), rgba(58, 58, 58, 0.3)), url(../public/signin-bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+.logoContainer{
+    margin-left:20px !important;
+}
+.loginContainer{
+    max-width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.719);
+    border-radius: 20px;
+    margin: 0px auto;
+}
+.loginContainer p{
+    font-size: 25px;
+    margin-left: 30px;
+}
+.loginContainer input{
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    line-height: 2;
+    font-size: 20px;
+    border-radius: 8px;
+    border :transparent 1px solid
+}
+.loginContainer input:focus{
+    border :rgb(0, 102, 255) 1px solid
+}
+.loginContainer button{
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    background-color: red;
+    color: white;
+    height: 45px;
+    border-radius: 8px;
+    font-weight: 800;
+}
+.errorMessage{
+    color: red;
+    font-size: 15px !important;
+}

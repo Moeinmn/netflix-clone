@@ -1,0 +1,68 @@
+.navContainer{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-image: linear-gradient(to bottom , #000 , rgba(0, 0, 0, 0.034));
+}
+@media screen and (max-width:300px) {
+    .navContainer{
+        font-size : 13px
+    }
+}
+.logoLink {
+    display: flex;
+    font-weight: 500;
+    font-size: 1rem;
+    align-items: center;
+    color: white;
+    margin-bottom: 1rem /* 16px */;
+    margin: 10px 15px ;
+  }
+@media screen and (max-width:700px) {
+    .logoLink{
+        display: none;
+    }
+}
+  .logoWrapper {
+    color: red;
+    width: 8rem /* 128px */;
+  }
+.menuBtn {
+    padding: 15px 5px;
+    display: inline-block;
+    cursor : pointer
+}
+.userInfo{
+    color: white;
+}
+.userInfo p{
+    margin: 15px 0px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.userInfo p span {
+    font-size: 15px;
+    vertical-align: middle;
+    margin: 0px 3px;
+}
+.dropDown{
+    display: inline-flex;
+    background-color: rgb(43, 42, 42);
+    position: relative;
+    z-index: 999;
+    left: 20%;
+    top: 6px;
+    border-radius: 7px;
+}
+.dropDown a {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}

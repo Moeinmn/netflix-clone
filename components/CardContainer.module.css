@@ -1,0 +1,16 @@
+.container{
+    width: 90%;
+    margin: 20px 5%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+@media screen and (min-width:900px) {
+    .container::-webkit-scrollbar{
+        height: 5px;
+        background: transparent;
+    }
+    .container::-webkit-scrollbar-thumb{
+        background-color: rgba(27, 27, 27, 0.87);
+        border-radius: 20px;
+    }
+}

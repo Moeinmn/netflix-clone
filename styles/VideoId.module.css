@@ -1,0 +1,37 @@
+.container {
+  width: 80%;
+  margin: 50px 10% 0px 10%;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+.textContainer{
+  height: calc(100vh - 410px);
+  overflow: scroll;
+}
+.textContainer span {
+  color: #585858;
+}
+.textContainer p {
+  text-align : justify;
+}
+.likeDislikeBtnWrapper {
+    display: flex;
+    margin-bottom: 0.75rem /* 12px */;
+    position: absolute !important;
+    bottom: 18px;
+  }
+  
+  .btnWrapper {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgba(128, 128, 128, 0.288);
+    border-radius: 9999px;
+    padding: 0.5rem /* 8px */;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .likeBtnWrapper {
+    margin-right: 0.5rem /* 8px */;
+  }
