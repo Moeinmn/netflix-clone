@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { getMovieData } from "../../lib/youtubeApi";
 import { useEffect , useState } from 'react';
 import { useRouter } from 'next/router';
@@ -57,6 +58,9 @@ const VideoPage = ({movieData}) => {
     }
     return ( 
     <>
+    <Head>
+    <title>Video page</title>
+    </Head>
     <Navbar/>
     <div className={styles.container}>
     <div style={{position: 'relative'}}>

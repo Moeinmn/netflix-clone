@@ -56,6 +56,9 @@ export default function Home({bannerMovieData , disneyMovies , travelMovies , pr
 
   return (
     <>
+    <Head>
+    <title>Netflix clone</title>
+    </Head>
     <Navbar/>
     <Banner data = {bannerMovieData}/>
 

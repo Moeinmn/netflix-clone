@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styles from "../styles/Login.module.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -37,6 +38,9 @@ const Login = () => {
 
   return (
     <>
+    <Head>
+    <title>Netflix Login</title>
+    </Head>
       <section className={styles.container}>
         <span className={styles.logoContainer}>
           <Image

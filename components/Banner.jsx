@@ -3,6 +3,7 @@ import  Link  from 'next/link';
 
 const Banner = ({data}) => {
     return ( 
+        
         <div className={styles.banner} style={{backgroundImage: `url(https://i.ytimg.com/vi/${data?.id?.videoId|| data?.id}/maxresdefault.jpg)`}}>
             <div className={styles.textContent}>
                 <span className={styles.bigN}>N</span>
