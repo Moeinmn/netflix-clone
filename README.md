@@ -7,13 +7,15 @@ You need to setup a few API keys for this project to be setup correctly otherwis
 ---Hasura Admin URL and JWT Secret
 ---Youtube API Key
 For that, you need to create a .env.local file in your project as shown in docs that will look like this:
+```javascript
+NEXT_PUBLIC_HASURA_ADMIN_URL=<REPLACE_THIS>
+JWT_SECRET=<REPLACE_THIS>
+NEXT_PUBLIC_HASURA_ADMIN_SECRET=<REPLACE_THIS>
+MAGIC_SERVER_KEY=<REPLACE_THIS>
+NEXT_PUBLIC_MAGIC_PUBLISHABLE_API_KEY=<REPLACE_THIS>.
+YOUTUBE_API_KEY=<REPLACE_THIS>
+```
 
-NEXT_PUBLIC_HASURA_ADMIN_URL=<REPLACE THIS>
-JWT_SECRET=<REPLACE THIS>
-NEXT_PUBLIC_HASURA_ADMIN_SECRET=<REPLACE THIS>
-MAGIC_SERVER_KEY=<REPLACE THIS>
-NEXT_PUBLIC_MAGIC_PUBLISHABLE_API_KEY=<REPLACE THIS>
-YOUTUBE_API_KEY=<REPLACE THIS>
 You can retrieve the above environment values by referring their docs linked above and once retrieved, paste above accordingly.
 ## Getting Started
 
