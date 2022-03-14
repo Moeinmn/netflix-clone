@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import { magic } from "../lib/magic";
 
 const Login = () => {
-  let [email, setEmail] = useState("moein.chief@gmail.com");
+  let [email, setEmail] = useState('');
   let [did, setDid] = useState();
   let [isError, setIsError] = useState(false);
   let [magicLoading, setMagicLoading] = useState(false);
@@ -26,7 +26,6 @@ const Login = () => {
     try {
       setMagicLoading(true);
       let didToken = await magic.auth.loginWithMagicLink({ email: `${email}` });
-      console.log(didToken);
       setDid(didToken);
       await fetch(`/api/hasuraLogin/?didToken=${didToken}`, { method: "POST" });
       setMagicLoading(false);
@@ -35,7 +34,7 @@ const Login = () => {
       setIsError("Something went wrong logging in");
     }
   };
-
+  
   return (
     <>
     <Head>
@@ -59,10 +58,10 @@ const Login = () => {
             <input
               type="text"
               value={email}
-              autoComplete="on"
               placeholder="Enter your email"
               onChange={(e) => {
-                setEmail(e.target.value);
+                const email = e.target.value;
+                setEmail(email);
               }}
             />
           </form>
