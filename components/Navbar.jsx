@@ -57,7 +57,7 @@ useEffect(()=>{
             />
           </div>
         </a>
-        <Link href='./' passHref>
+        <Link href='/' passHref>
         <a className={styles.menuBtn}>Home</a>
         </Link>
         <Link href='/browse/userList' passHref>
